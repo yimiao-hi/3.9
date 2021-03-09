@@ -1,0 +1,242 @@
+.head{
+    width: 100%;
+    height: 1.8rem;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+/* 头部返回键 */
+.head-return{
+    position: absolute;
+    top: .4rem;
+    left: 0;
+    padding:.2rem;
+    width: 0.6rem;
+}
+.head>p{
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: .7rem;
+    color: rgba(16, 16, 16, 100);
+}
+/* 剩余时间横幅 */
+.remaining-time{
+    margin-top: 1.8rem;
+    height: 1rem;
+    text-align: center;
+    background-color: #DBDBDB;
+}
+.remaining-time>img{
+    transform: translateY(0.1rem);
+}
+.remaining-time>span{
+    line-height: 1rem;
+}
+/* 内容 */
+#content{
+    padding: 0 1rem 2rem;
+}
+#order{
+    margin:.5rem 0;
+}
+#order-img{
+    float: left;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+#order-text{
+    transform: translate(.55rem);
+    line-height: .8rem;
+    display: flex;
+}
+
+/* 文字两端对齐 */
+#order-text-left>p{
+    text-align-last:justify;
+}
+/* 复制按钮 */
+.copy-button{
+    padding: .31rem .21rem;
+    background-color: rgba(57, 155, 255, 100);
+    color: rgba(255, 255, 255, 100);
+    font-size: .4rem;
+    border-radius: .2rem;
+    transform: translateX(.5rem);
+    line-height: 0rem;
+}
+#order-query{
+    transform: translate(.5rem,.3rem);
+    font-size: .62rem;
+}
+/* 任务进度 */
+#progress{
+    margin-top: 1rem;
+    height: 18rem;
+}
+/* 灰色进度条 */
+#line{
+    width: 0;
+    height: 100%;
+    border-left: 1px solid #DFDFDF;
+    float: left;
+}
+/* 小红点进度条 */
+#progress-bar-box{
+    float: left;
+    height: 17rem;
+    position: relative;
+}
+
+#red-dot-box{
+    position: absolute;
+    top: 0;
+    transform: translate(-.1rem);
+    width: .25rem;
+    height: 100%;
+}
+.red-dot{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 100%;
+    position: relative;
+    top: 50%; 
+    transform: translate(-180%,-10%);
+}
+
+/* 具体任务进度 */
+#progress-right{
+    padding-bottom: 2.5rem;
+    transform: translate(.3rem,-.2rem);
+    font-size: .6rme;
+}
+#progress-right>div{
+    margin-bottom: .5rem;
+}
+#progress-right>div>p{
+    margin-bottom: .2rem;
+}
+.progress-input{
+    width: 7rem;
+    padding: .25rem ;
+    border: 1px solid rgba(187, 187, 187, 100);
+    font-size: .5rem;
+
+}
+/* 第4、下载图片 */
+#progress-img{
+    padding: .2rem 0;
+}
+#progress-img>img{
+    width: 2rem;
+    height: 2rem;
+}
+#progress-img>span,#progress-img>button{
+    position: relative;
+    top: -.7rem;
+}
+/* 第五 */
+#screenshot-box{
+    margin: .2rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(238, 238, 238, 100);
+    color: #B1B1B1;
+    display: inline-block;
+}
+#screenshot-box>img{
+    width: 1.5rem;
+    position: relative;
+    top: 50%; 
+    transform: translateY(-80%);
+}
+#screenshot-box>p{
+    position: relative;
+    top: 1rem;
+}
+#screenshot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+/* 示例 */
+#screenshot-text{
+    position: relative;
+    top: 1.8rem;
+}
+/* 复制、下载按钮 */
+#progress-right button{
+    padding: 0.27rem .52rem;
+    transform: translate(.3rem,-.03rem);
+    font-size: .45rem;
+    border-radius: .15rem;
+    background-color: white;
+    border: 1px solid rgba(187, 187, 187, 100);
+}
+#progress-right video{
+    transform: translateY(.5rem);
+    width: 2rem;
+    height: 3rem;
+    background-color: rgba(247, 247, 247, 100);
+    border: 1px solid rgba(238, 238, 238, 100);
+}
+/* 流程下面的提示 */
+#progress-right>p{
+    line-height: 1rem;
+    text-align: center;
+}
+/* 底部按钮 */
+#bottom-btn{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+#bottom-btn>button{
+    width: 100%;
+    height: 1.75rem;
+    background-color: rgba(57, 155, 255, 100);
+    color: white;
+    font-size: .6rem;
+}
+
+/* 可复用class */
+.red{
+    color: red;
+}
+.oxblood-red{
+    color: #D90404;
+}
+.gray{
+    color: #828282;
+}
+.dark-grey{
+    color: #484848;
+}
+.blue{
+    color: blue;
+}
+.wathet{
+    color: #399BFF;
+}
+
+/* 字体加粗 */
+.font-weight{
+    font-weight: 600;
+}
+/* 只读框不要焦点 */
+.outline-none{
+    outline:none
+}
+/* Y轴移动 */
+.translate-y{
+    position: relative;
+    top: -1.5rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<!-- rem初始化JS文件 -->
+<script src="images/js/reset.js"></script>
+<link rel="stylesheet" type="text/css" href="images/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="images/css/index.css"/>
+
+<title>紫蜜桃-拼多多任务-任务进度</title>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<img src="images/img/返回键.png" alt="" class="head-return">
+		<p>紫蜜桃-拼多多任务-任务进度</p>
+	</div>
+	<!-- 剩余时间 -->
+	<div class="remaining-time">
+		<img src="images/img/progress-clock.png" alt="">
+		<span>剩余时间:10:00</span>
+	</div>
+	<!-- 中间内容 -->
+	<div id="content">
+		<!-- 任务图片 -->
+		<div  id="progress-img">
+			<img src=" " alt="">
+			</div>
+			<!-- 提示一定时间内要完成 -->
+			<div id="hint-box">
+				<p class="gray">请在 <span class="red">20-10-14 17:15:09</span>前完成以下操作</p>
+				<p class="gray">否则将自行作废哦~</p>
+			</div>
+		<div id="user-box">
+			<p class="gray">本次任务拼多多号：<span class="blue">djqsdhwoqi2088</span></p>
+			<p>您申请的任务返现时长为：2小时后返</p>
+		</div>
+		<!-- 拼多多订单 -->
+		<div id="order">
+			<!-- 拼多多链接 -->
+			<div>
+				<span id="order-progress" class="red font-weight">任务流程</span>
+				<span class="blue">（拼多多订单）</span>
+				<p class="dark-grey font-weight">1.打开拼多多批发链接：</p>
+				<span class="gray">链接：</span>
+				<input type="text" id="order-input" placeholder="www.weqwew.js/sa">
+				<button class="order-btn">打开</button>
+			</div>
+			<!-- 或淘口令 -->
+			<div>
+				<span class="dark-grey font-weight">2.验证商品链接或淘口令：</span>
+				<span class="wathet font-weight">如何复制淘口令>></span>
+				<br>
+				<textarea id="order-textarea">请填写商品链接或淘口令</textarea>
+				<button id="verification" class="order-btn">验证</button>
+			</div>
+			<div>
+				<p class="dark-grey font-weight">3.其他提示：记得好评哦！</p>
+			</div>
+		</div>
+		<div id="content-bottom">
+			<p class="oxblood-red font-weight">您可以付款了 支付件数为8件！</p>
+			<p class="oxblood-red font-weight">实际支付金额为1280元！</p>
+			<p id="bottom-text">务必使用拼多多账号 格格布 拍下并付款哦~</p>
+			<p>本次佣金为1.3元</p>
+		</div>
+	</div>
+	<!-- 底部按钮 -->
+	<div id="bottom-btn">
+		<button id="paid">我已付款</button>
+		<button id="cancel">取消任务</button>
+	</div>
+</body>
+</html>

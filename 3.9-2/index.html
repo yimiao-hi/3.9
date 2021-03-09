@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<!-- rem初始化JS文件 -->
+<script src="images/js/reset.js"></script>
+<link rel="stylesheet" type="text/css" href="images/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="images/css/index.css"/>
+
+<title>紫蜜桃-任务进度</title>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<img src="images/img/返回键.png" alt="" class="head-return">
+		<p>紫蜜桃-任务进度</p>
+	</div>
+	<!-- 剩余时间 -->
+	<div class="remaining-time">
+		<img src="images/img/progress-clock.png" alt="">
+		<span>任务已持续时间:2天  08:10:00</span>
+	</div>
+	<!-- 中间内容 -->
+	<div id="content">
+		<div id="order">
+			<img src=" " alt="" id="order-img">
+			<div id="order-text">
+				<div id="order-text-left">
+					<p>对应平台</p>
+					<p>抖音账号</p>
+					<p>订单号</p>
+					<p>产品类型</p>
+				</div>
+				<div>
+					<p>: 拼多多-2</p>
+					<p>: 8773485</p>
+					<p>: 14234341234<button class="copy-button">复制</button></p>
+					<p>: 拼多多订单</p>
+				</div>
+			</div>
+			<p id="order-query" class="wathet">查询入口参考</p>
+		</div>
+		<!-- 任务进度 -->
+		<div id="progress">
+			<!-- 灰色竖线条 -->
+			<div id="line"></div>
+			<!-- 具体任务进度 -->
+		<div id="progress-right">
+			<!-- 红点和文字放在一行 -->
+			<div>
+				<p><div class="red-dot"></div>1.打开拼多多客户端，从【个人中心】→我的订单</p>
+				<span>【评价】中找到该订单</span>
+			</div>
+			
+			<div>
+				<p><div class="red-dot"></div>2.复制带字评价五分好评！</p>
+				<span class="gray">评论：</span>
+				<input class="outline-none gray progress-input" type="text" readonly="readonly" value="好东西好搭配，好锅">
+				<button>复制</button>
+			</div>
+			<div>
+				<p><div class="red-dot"></div>3.下载视频！</p>
+				<span class="gray translate-y">视频：</span>
+				<!--  -->
+				<video src=" "></video>
+				<button class="translate-y">下载</button>
+			</div>
+			<div>
+				<p><div class="red-dot"></div>4.下载图片！</p>
+				<div id="progress-img">
+					<span class="gray">图片：</span>
+					<img src=" " alt="">
+					<img src=" " alt="">
+					<button>下载</button>
+				</div>
+			</div>
+			<div>
+				<p><div class="red-dot"></div>5.最后一步上传拼多多订单评分截图！</p>
+				<div id="screenshot-box">
+					<input type="file" id="screenshot">
+					<img src="images/img/相机2.png" alt="">
+					<p>添加图片</p>
+				</div>
+				<span id="screenshot-text" class="wathet">示例</span>
+			</div>
+			<p>提示：上传评价完成后可以得到<span  class="font-weight">3元佣金</span>和一个信誉积分，</p>
+			<p>信誉积分可以更容易接到任务。</p>
+		</div>
+
+		</div>
+		
+	</div>
+	<!-- 底部按钮 -->
+	<div id="bottom-btn">
+		<button>提交订单</button>
+	</div>
+</body>
+</html>

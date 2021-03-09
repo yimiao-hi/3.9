@@ -150,9 +150,8 @@
 }
 #screenshot-box>img{
     width: 1.5rem;
-    position: relative;
-    top: 50%; 
-    transform: translateY(-80%);
+    marign: auto;
+    transform: translateY(.5rem);
 }
 #screenshot-box>p{
     position: relative;
